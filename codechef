@@ -1,0 +1,21 @@
+import java.util.*;
+public class Automorphic{
+public void morphic(int a){
+int sq=0;
+String s="";
+sq=a*a;
+s=sq;
+if(s.endswith(a))
+System.out.println("Automorphic number");
+else
+System.out.println("Not an Automorphic number");
+}
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+Automorphic ob=new Automorphic();
+int a1;
+System.out.println("Enter a number");
+a1=sc.nextInt();
+ob.morphic(a1);
+}
+}
